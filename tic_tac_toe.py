@@ -35,12 +35,12 @@ def create_board ():
         print (num, end=" ")
     print (" ")
 
-# Get player one input
+# Get players input
 def player_input(turn):
     move = input (f" {turn}'s turn to choose a square (1-9):")
     return move
 
-# 
+# The board will update based on user input
 def updated_board (player, x):
     if player == "1":
         row1[0] = x    
@@ -71,9 +71,7 @@ def player (turn):
         turn = "x"
     return turn
 
-    # if player_x_input == "x":
-    #     player_o_input = o
-
+#iterate through rows to check if there are no numbers left on the board
 def winner (updated_board):
     str ="0123"
     #Top row across
@@ -91,8 +89,8 @@ def winner (updated_board):
     # diagonal right to bottom
     elif row1 [2] and row2 [1] and row3 [0] ==  str.isdigit:
         return True
-
+# Check if all board spaces are filled with a letter but no winner
 def tie ():
-    while tie or winner == False:
+     
 
 main ()
