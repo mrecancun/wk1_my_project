@@ -85,20 +85,11 @@ def winner (updated_board):
     #Bottom row
     elif row3 [0] and row1 [1] and row1 [2] ==  str.isdigit:
         return True
-    # diagnol 
-    elif row1 [0] and row1 [1] and row1 [2] ==  str.isdigit:
+    # diagonal left to bottom
+    elif row1 [0] and row2 [1] and row3 [2] ==  str.isdigit:
         return True
-    elif row1 [0] and row1 [1] and row1 [2] ==  str.isdigit:
-        return True
-    elif row1 [0] and row1 [1] and row1 [2] ==  str.isdigit:
-        return True
-    elif row1 [0] and row1 [1] and row1 [2] ==  str.isdigit:
-        return True
-    elif row1 [0] and row1 [1] and row1 [2] ==  str.isdigit:
-        return True
-    elif row1 [0] and row1 [1] and row1 [2] ==  str.isdigit:
-        return True
-    elif row1 [0] and row1 [1] and row1 [2] ==  str.isdigit:
+    # diagonal right to bottom
+    elif row1 [2] and row2 [1] and row3 [0] ==  str.isdigit:
         return True
 
 def tie ():
